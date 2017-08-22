@@ -1,5 +1,6 @@
 which fasd &> /dev/null || (
     wget "https://raw.githubusercontent.com/clvv/fasd/master/fasd" -o $DOTFILES/bin/fasd
+    chmod +x $DOTFILES/bin/fasd
 )
 
 if [ $commands[fasd] ]; then
